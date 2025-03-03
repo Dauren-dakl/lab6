@@ -1,9 +1,11 @@
+import math
+
 def multiply_numbers(numbers):
-    result = 1
-    for num in numbers:
-        result *= num
+    result = math.prod(numbers)
     return result
 
-num_list = [2, 3, 4, 5]
-result = multiply_numbers(num_list)
-print("answer:", result)
+
+numbers = [1, 2, 3, 4, 5]
+result = multiply_numbers(numbers)
+print("List:", numbers)
+print("Result of multiplying all numbers:", result)
